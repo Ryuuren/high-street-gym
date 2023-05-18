@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE room-upload [
+    <!ELEMENT room-upload (rooms)>
+    <!ATTLIST room-upload operation (insert|update) "insert">
+    <!ELEMENT rooms (room+)>
+    <!ELEMENT room (room_id?, room_location, room_number)>
+    <!ELEMENT room_id (#PCDATA)>
+    <!ELEMENT room_location (#PCDATA)>
+    <!ELEMENT room_number (#PCDATA)>
+]>
+<!-- <room-upload operation="insert">
+    <rooms>
+        <room>
+            <room_location>1st Floor</room_location>
+            <room_number>2</room_number>
+        </room>
+        <room>
+            <room_location>2nd Floor</room_location>
+            <room_number>6</room_number>
+        </room>
+        <room>
+            <room_location>3rd Floor</room_location>
+            <room_number>11</room_number>
+        </room>
+        <room>
+            <room_location>4th Floor</room_location>
+            <room_number>18</room_number>
+        </room>
+    </rooms>
+</room-upload> -->
+
+<!-- Update version  -->
+<room-upload operation="update">
+    <rooms>
+        <room>
+            <room_id>22</room_id>
+            <room_location>5th Floor</room_location>
+            <room_number>21</room_number>
+        </room>
+        <room>
+            <room_id>23</room_id>
+            <room_location>6th Floor</room_location>
+            <room_number>26</room_number>
+        </room>
+        <room>
+            <room_id>24</room_id>
+            <room_location>7th Floor</room_location>
+            <room_number>31</room_number>
+        </room>
+        <room>
+            <room_id>25</room_id>
+            <room_location>8th Floor</room_location>
+            <room_number>36</room_number>
+        </room>
+    </rooms>
+</room-upload>

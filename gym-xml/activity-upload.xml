@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE activity-upload [
+    <!ELEMENT activity-upload (activities)>
+    <!ATTLIST activity-upload operation (insert|update) "insert">
+    <!ELEMENT activities (activity+)>
+    <!ELEMENT activity_id (#PCDATA)>
+    <!ELEMENT activity_name (#PCDATA)>
+    <!ELEMENT activity_description (#PCDATA)>
+    <!ELEMENT activity_duration (#PCDATA)>
+    <!ELEMENT activity (activity_id?, activity_name, activity_description, activity_duration)>
+]>
+<!-- <activity-upload operation="insert">
+    <activities>
+        <activity>
+            <activity_name>Karate</activity_name>
+            <activity_description>Japanese Martial Arts</activity_description>
+            <activity_duration>45</activity_duration>
+        </activity>
+        <activity>
+            <activity_name>Taekwondo</activity_name>
+            <activity_description>Korean Martial Arts</activity_description>
+            <activity_duration>45</activity_duration>
+        </activity>
+        <activity>
+            <activity_name>Krav Maga</activity_name>
+            <activity_description>Israeli Martial Arts</activity_description>
+            <activity_duration>45</activity_duration>
+        </activity>
+        <activity>
+            <activity_name>Muay Thai</activity_name>
+            <activity_description>Thai Martial Arts</activity_description>
+            <activity_duration>45</activity_duration>
+        </activity>
+    </activities>
+</activity-upload> -->
+
+<!-- Update version  -->
+<activity-upload operation="update">
+    <activities>
+        <activity>
+            <activity_id>38</activity_id>
+            <activity_name>Yoga</activity_name>
+            <activity_description>Mind, Body and Soul</activity_description>
+            <activity_duration>15</activity_duration>
+        </activity>
+        <activity>
+            <activity_id>39</activity_id>
+            <activity_name>Pilates</activity_name>
+            <activity_description>Look after yourself</activity_description>
+            <activity_duration>60</activity_duration>
+        </activity>
+        <activity>
+            <activity_id>40</activity_id>
+            <activity_name>Stretching</activity_name>
+            <activity_description>Keep your body flexible</activity_description>
+            <activity_duration>30</activity_duration>
+        </activity>
+    </activities>
+</activity-upload>
